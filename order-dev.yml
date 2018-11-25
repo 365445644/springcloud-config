@@ -1,0 +1,20 @@
+server:
+  port: 8001
+spring:
+   ##服务别名
+    application:
+        name: order
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/springcloud_sell?characterEncoding=UTF-8
+        username: zgh
+        password: 123
+    jpa:
+        show-sql: true
+##注册到eureka上
+eureka:
+  client:
+    service-url:
+           defaultZone: http://localhost:8100/eureka
+    register-with-eureka: true
+    fetch-registry: true
