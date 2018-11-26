@@ -18,4 +18,4 @@ eureka:
            defaultZone: http://localhost:8100/eureka
     register-with-eureka: true
     fetch-registry: true
-authorName: zgh-test17
+authorName: zgh-test18
